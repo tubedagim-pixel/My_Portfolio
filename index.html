@@ -1,76 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Frontend Developer Portfolio — Semantic HTML, Modern CSS, and Vanilla JavaScript.">
-  <title>Dagim Ephrem — Frontend Developer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A developer portfolio and 30-day learning journal." />
+  <title>Dagi — Developer in Progress</title>
+  
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-
-  <header class="site-header" role="banner">
-    <div class="container site-header__inner">
-      <a href="#" class="wordmark" data-config="name">Dagim Ephrem</a>
-      <span class="meta-label" data-config="role">Frontend Developer</span>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="Dagi home"><span class="brand-mark">D</span><span>Dagi<span style="color:var(--accent2)">.</span></span></a>
+      <nav class="links" id="nav-links" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="button ghost resume" href="#projects">Explore work ↗</a><button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu ☰</button></div>
     </div>
   </header>
 
-  <main id="main-content">
-
-   
-    <section id="hero" class="section" aria-labelledby="hero-heading">
-      <div class="container">
-        <p class="section-index">00 / Foundation Preview</p>
-        <h1 id="hero-heading" class="headline-display">
-          Frontend Developer.
-        </h1>
-        <p class="lead" data-config="introduction">
-         Welcome to My website. This is the website that shows my works and Skills.
-        </p>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Hello, world — I'm Dagi</div>
+          <h1>Building my way<br>into <span class="gradient-text">the web.</span></h1>
+          <p>I'm learning to turn ideas into useful, thoughtful digital experiences. This is my portfolio, my playground, and a public record of showing up every day.</p>
+          <div class="hero-buttons"><a class="button primary" href="#projects">See what I'm building <span aria-hidden="true">↗</span></a><a class="button ghost" href="#journal">Follow the journey ↓</a></div>
+        </div>
+        <div class="hero-art" aria-label="Decorative code editor illustration">
+          <div class="window-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <div class="code">
+            <div><span class="purple">const</span> developer = {</div>
+            <div>&nbsp;&nbsp;name: <span class="green">'Dagi'</span>,</div>
+            <div>&nbsp;&nbsp;learning: [</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'HTML & CSS'</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'JavaScript'</span>,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'Git & GitHub'</span></div>
+            <div>&nbsp;&nbsp;],</div>
+            <div>&nbsp;&nbsp;mindset: <span class="blue">'keep building'</span></div>
+            <div>}; <span class="purple">↵</span></div>
+          </div>
+          <div class="floating-note">✦ Small steps. Real progress.</div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section" aria-labelledby="about-heading">
-      <div class="container">
-        <p class="section-index">01 / About</p>
-        <h2 id="about-heading" class="headline-section">About &amp; Approach</h2>
-        <p class="text-muted">I am a third year student at Arba Minch University. I am Frontend Developer and Video Editor </p>
+    <section class="section section-light" id="about">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <div class="eyebrow" style="color:#5b4bd0">A little about me</div>
+          <h2>Curious by nature.<br>Builder by practice.</h2>
+          <p class="muted">I'm on a 30-day challenge to learn by doing. I'll share what I make, what breaks, what I fix, and the lessons I want to remember.</p>
+          <p class="muted">This site will evolve as my skills do. The projects below are starter ideas—replace them with real work as you build.</p>
+          <a class="button primary" href="#journal">Read my learning log ↗</a>
+        </div>
+        <div class="about-card reveal">
+          <div class="eyebrow" style="color:#5b4bd0">Current focus</div>
+          <h3>Learning the fundamentals, one commit at a time.</h3>
+          <p class="muted">I care about clear layouts, accessible interfaces, useful details, and understanding how things work—not just copying code.</p>
+          <div class="stats"><div class="stat"><strong>30</strong><span>days of practice</span></div><div class="stat"><strong>1%</strong><span>better each day</span></div><div class="stat"><strong>∞</strong><span>things to explore</span></div></div>
+          <div class="skill-list"><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Git & GitHub</span><span class="skill">Responsive UI</span><span class="skill">React (later)</span></div>
+        </div>
       </div>
     </section>
 
-   
-    <section id="skills" class="section" aria-labelledby="skills-heading">
-      <div class="container">
-        <p class="section-index">02 / Capabilities</p>
-        <h2 id="skills-heading" class="headline-section">Technical Skills</h2>
-        <p class="text-muted">Frontend Developer | Video Editor | Youtube Automation Expert.</p>
+    <section class="section section-dark" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">Selected experiments</div><h2>Things I'm building.</h2></div><p style="color:var(--muted)">Start small. Finish projects. Learn something from every version. These are starter concepts to replace with your own builds.</p></div>
+        <div class="project-grid">
+          <article class="project reveal"><div class="project-visual"><div class="mock-window"><div class="mock-line short"></div><div class="mock-line"></div><div class="mock-line mid"></div><div class="mock-line short"></div></div></div><div class="project-body"><h3>01 / Personal Portfolio</h3><p>A responsive home for my work, story, and daily progress.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><a class="text-link" href="#journal">Build log ↗</a></div></article>
+          <article class="project reveal"><div class="project-visual" style="background:radial-gradient(circle at 75% 20%,#416f85,transparent 45%),linear-gradient(135deg,#1c3445,#111522)"><div class="mock-window"><div style="font-weight:800;color:#9be6ba">TODAY'S FOCUS</div><div class="mock-line"></div><div class="mock-line mid"></div><div class="mock-line short"></div></div></div><div class="project-body"><h3>02 / Focus Tracker</h3><p>A tiny task app to practice state, events, and saving data.</p><div class="tags"><span class="tag">DOM</span><span class="tag">Events</span><span class="tag">LocalStorage</span></div><a class="text-link" href="#journal">Build log ↗</a></div></article>
+          <article class="project reveal"><div class="project-visual" style="background:radial-gradient(circle at 75% 20%,#7950a6,transparent 45%),linear-gradient(135deg,#302145,#111522)"><div class="mock-window"><div style="font-size:1.2rem;font-weight:800">Weather / 24°</div><div class="mock-line mid"></div><div class="mock-line short"></div><div class="mock-line"></div></div></div><div class="project-body"><h3>03 / Weather Dashboard</h3><p>A simple dashboard that introduces APIs and loading states.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">UI</span></div><a class="text-link" href="#journal">Build log ↗</a></div></article>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section" aria-labelledby="projects-heading">
-      <div class="container">
-        <p class="section-index">03 / Selected Work</p>
-        <h2 id="projects-heading" class="headline-section">Projects</h2>
-        <p class="text-muted"></p>
+    <section class="section section-light" id="journal">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow" style="color:#5b4bd0">The daily journal</div><h2>30 days. One commit at a time.</h2></div><p class="muted">Write a few honest lines after each session: what you learned, what was tricky, and what you'll try tomorrow.</p></div>
+        <div class="journal-grid">
+          <article class="journal-card reveal"><span class="day">DAY 01</span><h3>Start with structure</h3><p>Set up the repository and understand the main sections of a semantic HTML page.</p><details><summary>Today's learning prompt</summary><p>What do header, nav, main, section, and footer communicate to the browser and assistive technology? Add one note in your README.</p></details></article>
+          <article class="journal-card reveal"><span class="day">DAY 02</span><h3>Make it feel intentional</h3><p>Practice spacing, typography, color, and reusable CSS variables.</p><details><summary>Today's learning prompt</summary><p>Change the accent color and spacing scale. Which CSS custom properties let you update the whole site quickly?</p></details></article>
+          <article class="journal-card reveal"><span class="day">DAY 03</span><h3>Make it responsive</h3><p>Use a mobile viewport and media queries to make the layout work on small screens.</p><details><summary>Today's learning prompt</summary><p>Resize the browser. Find one layout that feels cramped, then use a media query to improve it.</p></details></article>
+        </div>
+        <p style="margin:24px 0 0;color:var(--paper-muted);font-size:.9rem">Keep adding entries each day. Your journal becomes proof of the process, not just the final result.</p>
       </div>
     </section>
 
-    <section id="contact" class="section" aria-labelledby="contact-heading">
-      <div class="container">
-        <p class="section-index">04 / Inquiries</p>
-        <h2 id="contact-heading" class="headline-section">Contact</h2>
-        <p class="text-muted"> tubedagim@gmail.com</p>
+    <section class="section section-dark" id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal"><div class="eyebrow">Say hello</div><h2>Let's make something<br><span class="gradient-text">useful together.</span></h2><p style="color:var(--muted);max-width:440px">Have an idea, feedback, or a resource I should check out? Update the links and contact details here as you make this portfolio your own.</p><p><a class="text-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a> &nbsp; · &nbsp; <a class="text-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></p></div>
+        <form class="contact-form reveal" id="contact-form">
+          <label for="sender-name">Your name<input id="sender-name" name="name" placeholder="Jane Doe" required /></label>
+          <label for="sender-email">Your email<input id="sender-email" name="email" type="email" placeholder="jane@example.com" required /></label>
+          <label for="sender-message">Message<textarea id="sender-message" name="message" placeholder="Hey, I wanted to say..." required></textarea></label>
+          <button class="button primary" type="submit">Prepare email ↗</button>
+          <p class="form-note">Demo form: it opens your email app; it does not store or send messages from this website.</p>
+        </form>
       </div>
     </section>
-    </main>
-     <footer class="site-footer" role="contentinfo">
-    <div class="container site-footer__inner">
-      <p class="meta-label">
-        &copy; <span id="current-year">2026</span> <span data-config="name">Dagim Ephrem </span>. All rights reserved.
-      </p>
-      <p class="meta-label" data-config="location">Arba Minch</p>
-    </div>
-  </footer>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Dagi. Built while learning.</span><span>Made with curiosity & a little CSS ✦</span><a class="top-link" href="#home">Back to top ↑</a></div></footer>
+  
 </body>
 </html>
