@@ -65,7 +65,6 @@ body {
     color: #0b0b12;
 }
 
-/* Home Section */
 .home {
     min-height: 90vh;
     display: flex;
@@ -99,7 +98,6 @@ body {
     margin: 20px 0;
 }
 
-/* Social Links */
 .social-links {
     display: flex;
     gap: 15px;
@@ -164,37 +162,137 @@ footer {
     border-top: 1px solid #272735;
 }
 
-@media (max-width: 700px) {
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+
     .navbar {
         padding: 15px 5%;
-        flex-direction: column;
-        gap: 20px;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-    }
-
-    .nav-links a {
-        font-size: 14px;
+        gap: 18px;
     }
 
     .home {
-        min-height: 80vh;
-        padding: 60px 6%;
+        padding: 70px 5%;
     }
 
-    .home-content h3 {
-        font-size: 21px;
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 52px;
     }
 
     .home-content p {
         font-size: 16px;
     }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .nav-links .contact-btn {
+        padding: 7px 12px;
+    }
+
+    .home {
+        min-height: 80vh;
+        padding: 60px 6%;
+        align-items: center;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content h3 {
+        font-size: 19px;
+    }
+
+    .home-content h1 {
+        font-size: 42px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-links a {
+        padding: 9px 13px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 11px 17px;
+        font-size: 14px;
+    }
 
     .content-section {
-        padding: 60px 6%;
+        padding: 55px 6%;
+        min-height: auto;
+    }
+
+    .content-section h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home-content h3 {
+        font-size: 17px;
+    }
+
+    .social-links a {
+        font-size: 13px;
     }
 }
