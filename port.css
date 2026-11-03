@@ -12,6 +12,7 @@ body {
     font-family: Arial, sans-serif;
     background: #0b0b12;
     color: #ffffff;
+
 }
 
 
@@ -272,6 +273,7 @@ html, body {
     .content-section h2 {
         font-size: 27px;
     }
+
 }
 
 @media (max-width: 380px) {
@@ -295,4 +297,17 @@ html, body {
     .social-links a {
         font-size: 13px;
     }
+    
+  
 }
+  .Projects {
+        padding: 55px 6%;
+        min-height: auto;
+    }
+
+    .Projects h2 {
+        font-size: 27px;
+    }
+ #projects h2{
+    color: #7c3aed;
+ }   
