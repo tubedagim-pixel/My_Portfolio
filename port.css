@@ -353,3 +353,47 @@ footer a { color: var(--purple); text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
 }
+
+/* Hide checkbox and hamburger on desktop */
+#menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111119;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
